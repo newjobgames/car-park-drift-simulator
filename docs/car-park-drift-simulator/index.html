@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Car Park & Drift Simulator</title>
+
+<meta name="description" content="Gerçekçi sürüş fiziği, etkileyici drift mekanikleri ve birbirinden zorlu park görevleriyle mobil sürüş deneyimini keşfet.">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:Inter, sans-serif;
+background:#0b0c10;
+color:#fff;
+}
+
+/* NAV */
+
+nav{
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px 0;
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+padding:0;
+margin:0;
+}
+
+nav a{
+color:#bdbdbd;
+text-decoration:none;
+transition:.3s;
+font-weight:600;
+}
+
+nav a:hover{
+color:#fff;
+}
+
+/* HERO */
+
+.hero{
+position:relative;
+text-align:center;
+padding:170px 0;
+background:url('images/icon.png') center/cover no-repeat;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.70);
+}
+
+.hero .content{
+position:relative;
+z-index:2;
+}
+
+.hero h1{
+font-size:52px;
+font-weight:800;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:700px;
+margin:auto;
+font-size:18px;
+line-height:1.7;
+opacity:.9;
+}
+
+.btn{
+display:inline-block;
+margin-top:35px;
+padding:16px 34px;
+background:linear-gradient(135deg,#4CAF50,#2ecc71);
+border-radius:14px;
+color:#fff;
+text-decoration:none;
+font-weight:700;
+transition:.3s;
+box-shadow:0 10px 30px rgba(46,204,113,.25);
+}
+
+.btn:hover{
+transform:translateY(-3px);
+box-shadow:0 15px 40px rgba(46,204,113,.4);
+}
+
+/* SECTION */
+
+.section{
+padding:90px 0;
+}
+
+.title{
+text-align:center;
+font-size:34px;
+margin-bottom:45px;
+font-weight:800;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.08);
+padding:28px;
+border-radius:18px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+border-color:#4CAF50;
+box-shadow:0 10px 30px rgba(0,0,0,.45);
+}
+
+.card h3{
+margin-top:0;
+margin-bottom:12px;
+font-size:20px;
+}
+
+.card p{
+opacity:.75;
+line-height:1.7;
+}
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:18px;
+}
+
+.gallery img{
+width:100%;
+border-radius:15px;
+transition:.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.03);
+}
+
+/* ABOUT */
+
+.about{
+max-width:800px;
+margin:auto;
+text-align:center;
+font-size:17px;
+line-height:1.9;
+opacity:.85;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:50px 20px;
+opacity:.7;
+font-size:15px;
+}
+
+footer a{
+color:#bdbdbd;
+text-decoration:none;
+margin:0 8px;
+}
+
+footer a:hover{
+color:#fff;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<nav>
+<ul>
+<li><a href="#features">Özellikler</a></li>
+<li><a href="#screens">Ekran Görüntüleri</a></li>
+<li><a href="#about">Oyun Hakkında</a></li>
+</ul>
+</nav>
+
+</div>
+
+<header class="hero">
+
+<div class="content">
+
+<h1>Car Park & Drift Simulator</h1>
+
+<p>
+Gerçekçi sürüş fiziğini deneyimle, kusursuz drift hareketleri yap ve birbirinden farklı park görevlerinde yeteneklerini sergile. Direksiyon başına geç, reflekslerini test et ve her sürüşte kendini geliştir.
+</p>
+
+<a class="btn" href="YOUR_GOOGLE_PLAY_LINK">📲 Google Play'den İndir</a>
+
+</div>
+
+</header>
+
+<section class="section" id="features">
+
+<div class="container">
+
+<h2 class="title">Neler Sunuyor?</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🚗 Gerçekçi Sürüş Deneyimi</h3>
+<p>
+Detaylı araç fiziği ve akıcı kontroller sayesinde her virajı hissedin. Gerçekçi sürüş dinamikleriyle yol hakimiyetinizi geliştirin.
+</p>
+</div>
+
+<div class="card">
+<h3>🔥 Drift Ustalığını Göster</h3>
+<p>
+Keskin virajlarda kontrollü kayışlar yapın, aracınızı ustalıkla yönetin ve sürüş becerilerinizi bir üst seviyeye taşıyın.
+</p>
+</div>
+
+<div class="card">
+<h3>🅿️ Zorlu Park Görevleri</h3>
+<p>
+Farklı zorluk seviyelerindeki park alanlarında reflekslerinizi test edin ve her bölümü başarıyla tamamlayın.
+</p>
+</div>
+
+<div class="card">
+<h3>⚙️ Araçlarını Kişiselleştir</h3>
+<p>
+Farklı araç seçeneklerini keşfedin, görünümünü özelleştirin ve kendi sürüş tarzınızı oluşturun.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="screens">
+
+<div class="container">
+
+<h2 class="title">Ekran Görüntüleri</h2>
+
+<div class="gallery">
+
+<img src="images/screen1.png" alt="">
+<img src="images/screen2.png" alt="">
+<img src="images/screen3.png" alt="">
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="about">
+
+<div class="container">
+
+<h2 class="title">Oyun Hakkında</h2>
+
+<p class="about">
+Car Park & Drift Simulator; gerçekçi araç fiziği, akıcı kontroller ve sürükleyici görevleri bir araya getiren mobil bir sürüş simülasyonudur. Drift becerilerinizi geliştirirken park görevlerini tamamlayabilir, farklı araçları deneyimleyebilir ve her bölümde daha iyi bir sürücü olmak için kendinizi geliştirebilirsiniz. İster hassas park manevraları yapın ister uzun driftler gerçekleştirin, her sürüş yeni bir deneyim sunar.
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 New Job Games. Tüm hakları saklıdır.</p>
+
+<p>
+<a href="about.html">Hakkımızda</a> |
+<a href="privacy.html">Gizlilik Politikası</a> |
+<a href="terms.html">Kullanım Şartları</a> |
+<a href="contact.html">İletişim</a>
+</p>
+
+</footer>
+
+</body>
+</html>
